@@ -1,0 +1,16 @@
+ALGORITHM algorithm_sorting_array
+VAR
+    sorted_array: ARRAY_OF INTEGER;
+    i:INTEGER;
+    j:INTEGER;
+    x:INTEGER;
+BEGIN
+Read (sorted_array[0])
+FOR i FROM 1 TO lenght (sorted_array) STEP 1 DO 
+    Read (sorted_array[i])
+    x:=sorted_array[i]
+    FOR j FROM i-1 to 0 STEP -1 DO 
+        swap(x,sorted_array[j])
+    END_FOR
+END_FOR
+END
